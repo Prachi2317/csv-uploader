@@ -9,8 +9,9 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 
 
 // set up the view engine
-app.set('view engine', 'ejs');
-app.set('views', './views');
+// set up the view engine
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs')
 
 app.use(express.static('./assets'));
 
